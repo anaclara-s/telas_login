@@ -22,7 +22,7 @@ class Pagina2 extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: Text('Tela 2'),
+        title: const Text('Tela 2'),
         centerTitle: true,
         backgroundColor:Colors.transparent,
         elevation: 0,
