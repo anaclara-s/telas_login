@@ -7,15 +7,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-//import 'package:telas_login/main.dart';
-import 'package:telas_login/tela1.dart';
+import 'package:telas_login/tela2.dart';
 
 
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const Pagina());
+    await tester.pumpWidget(Pagina());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
