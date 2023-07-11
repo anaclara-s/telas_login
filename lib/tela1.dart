@@ -8,13 +8,13 @@ class Pagina extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Pagina0(),
+      home: Pagina1(),
     );
   }
 }
 
-class Pagina0 extends StatelessWidget {
-  const Pagina0 ({super.key});
+class Pagina1 extends StatelessWidget {
+  const Pagina1 ({super.key});
 
 
   @override
@@ -24,12 +24,12 @@ class Pagina0 extends StatelessWidget {
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         titleTextStyle: 
-        TextStyle(
+        const TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.bold,
           color: Colors.white,
         ),
-        title: Text('Tela 1'),
+        title: const Text('Tela 1'),
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -59,7 +59,7 @@ class Pagina0 extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: 
-                      (context) => const Pagina2()),
+                      (context) => const Tela2()),
                     );
                 },
               )
@@ -92,7 +92,7 @@ class Pagina0 extends StatelessWidget {
                   child: Column(
                     children: [
                       TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           focusedBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
                               color: Colors.white,
@@ -115,13 +115,13 @@ class Pagina0 extends StatelessWidget {
                         ),  
                       ),
 
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.only(top: 30),
                         ),
 
                       TextFormField(
                         obscureText: true,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           focusedBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
                               color: Colors.white,
@@ -155,7 +155,7 @@ class Pagina0 extends StatelessWidget {
                             ),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: Color.fromARGB(255, 248, 248, 248),
+                              backgroundColor: const Color.fromARGB(255, 248, 248, 248),
                             ),
                             onPressed: () {
                               print('ENTRAR');
@@ -185,14 +185,14 @@ class Pagina0 extends StatelessWidget {
                         Container(
                           alignment: Alignment.bottomCenter,
                           child: ElevatedButton(
-                            child: Text('Criar Conta'),
                             style: ElevatedButton.styleFrom(
                               shadowColor: Colors.transparent,
                               backgroundColor: Colors.transparent
                             ),
                             onPressed: () {
                               print('CRIAR');
-                            }
+                            },
+                            child: const Text('Criar Conta')
                             ),
                           ),
                         
