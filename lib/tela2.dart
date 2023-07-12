@@ -28,17 +28,19 @@ class Tela2 extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
+
       //
+
       body: Column(
         children: [
           Container(
             width: MediaQuery.of(context).size.width,
-            height: 300,
+            height: MediaQuery.of(context).size.height / 3,
             decoration: const BoxDecoration(
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black,
-                  blurRadius: 5,
+                  color: Color.fromARGB(115, 151, 104, 172),
+                  blurRadius: 8,
                 ),
               ],
               gradient: LinearGradient(
@@ -47,7 +49,7 @@ class Tela2 extends StatelessWidget {
                 colors: [Colors.pinkAccent, Color.fromARGB(255, 5, 33, 87)],
               ),
               borderRadius: BorderRadius.only(
-                bottomRight: Radius.circular(200),
+                bottomRight: Radius.circular(150),
               ),
             ),
             child: const Icon(
@@ -58,15 +60,16 @@ class Tela2 extends StatelessWidget {
           ),
 
           //
+
           SizedBox(
             width: 180,
             child: Column(
               children: <Widget>[
                 //
+
                 const Padding(
-                  padding: EdgeInsets.all(50),
+                  padding: EdgeInsets.all(30),
                 ),
-                //
                 TextFormField(
                   style: const TextStyle(
                     color: Colors.white,
@@ -96,11 +99,12 @@ class Tela2 extends StatelessWidget {
                     ),
                   ),
                 ),
+
                 //
+
                 const Padding(
-                  padding: EdgeInsets.only(top: 20, bottom: 10),
+                  padding: EdgeInsets.only(top: 10),
                 ),
-                //
                 TextFormField(
                   obscureText: true,
                   style: const TextStyle(
@@ -129,12 +133,12 @@ class Tela2 extends StatelessWidget {
                     ),
                   ),
                 ),
+
                 //
+
                 Container(
+                  padding: const EdgeInsets.only(top: 5),
                   alignment: Alignment.bottomCenter,
-                  //
-                  padding: const EdgeInsets.only(bottom: 20),
-                  //
                   child: Column(
                     children: [
                       ElevatedButton(
@@ -153,7 +157,46 @@ class Tela2 extends StatelessWidget {
                           ),
                         ),
                       ),
+
                       //
+
+                      const Padding(
+                        padding: EdgeInsets.only(top: 10),
+                      ),
+                      SizedBox(
+                        width: 100,
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                              shadowColor: Colors.transparent,
+                              backgroundColor:
+                                  Color.fromARGB(50, 255, 255, 255)),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Icon(
+                                Icons.check_rounded,
+                                color: Color.fromARGB(255, 148, 103, 252),
+                              ),
+                              Text(
+                                ' Entrar',
+                                style: TextStyle(
+                                  color:
+                                      const Color.fromARGB(255, 148, 103, 252),
+                                ),
+                              ),
+                            ],
+                          ),
+                          onPressed: () {
+                            print('ENTAR');
+                          },
+                        ),
+                      ),
+
+                      //
+
+                      const Padding(
+                        padding: EdgeInsets.only(top: 20),
+                      ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           shadowColor: Colors.transparent,
@@ -163,7 +206,7 @@ class Tela2 extends StatelessWidget {
                           'Criar conta',
                           style: TextStyle(
                             color: Color.fromARGB(172, 87, 98, 252),
-                            fontSize: 14,
+                            fontSize: 16,
                           ),
                           textAlign: TextAlign.end,
                         ),

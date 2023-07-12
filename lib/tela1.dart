@@ -20,7 +20,7 @@ class Pagina1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color.fromARGB(255, 251, 212, 132),
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         titleTextStyle: 
@@ -46,7 +46,7 @@ class Pagina1 extends StatelessWidget {
               child:
                 DrawerHeader(
                   decoration: BoxDecoration(
-                    color: Colors.grey,
+                    color: Color.fromARGB(255, 251, 212, 132),
                   ),
                   child: Text('MENU'),
                 ),
@@ -71,20 +71,26 @@ class Pagina1 extends StatelessWidget {
           child: Stack(
             children: <Widget>[
               Center(
-                child: Image.asset('assets/imagens/nada.jpg'),
+                child: Image.asset('assets/imagens/sol.jpg'),
               ),
               Positioned(
-                top: 400,
+                top: 250,
                 child: Container(
                   padding: const EdgeInsets.all(20),
                   width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height,
                   decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 41, 41, 41),
+                    color: Color.fromARGB(255, 248, 203, 114),
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(50),
                       topRight: Radius.circular(50),
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                      color: Color.fromARGB(135, 255, 255, 255),
+                      blurRadius: 7,
+                      ),
+                    ],
                   ),
 
                   //
@@ -92,25 +98,29 @@ class Pagina1 extends StatelessWidget {
                   child: Column(
                     children: [
                       TextFormField(
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 90, 62, 6),
+                        ),
                         decoration: const InputDecoration(
+                          enabledBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Color.fromARGB(255, 255, 236, 192),
+                            ),
+                          ),
                           focusedBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
-                              color: Colors.white,
+                              color: Color.fromARGB(255, 255, 170, 0),
                             ),
                           ),
                           
                           prefixIcon: Icon(
                             Icons.person_2_outlined,
-                            color: Color.fromARGB(255, 150, 150, 150),
+                            color: Colors.white,
                           ),
 
-                          hintText: 'ex: 0000',
-                          hintStyle: TextStyle(
-                            color:Color.fromARGB(29, 255, 255, 255),
-                          ),
-                          labelText: 'Matrícula',
+                          labelText: 'Usuário',
                           labelStyle: TextStyle(
-                            color: Color.fromARGB(255, 150, 150, 150),
+                            color: Colors.white,
                           ),
                         ),  
                       ),
@@ -120,26 +130,30 @@ class Pagina1 extends StatelessWidget {
                         ),
 
                       TextFormField(
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 90, 62, 6),
+                        ),
                         obscureText: true,
                         decoration: const InputDecoration(
+                          enabledBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Color.fromARGB(255, 255, 236, 192)
+                            ),
+                          ),
                           focusedBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
-                              color: Colors.white,
+                              color: Color.fromARGB(255, 255, 170, 0),
                             ),
                           ),
 
                           prefixIcon: Icon(
                             Icons.lock_outline,
-                            color: Color.fromARGB(255, 150, 150, 150),
+                            color: Colors.white,
                           ),
 
-                          hintText: 'ex: XXXX',
-                          hintStyle: TextStyle(
-                            color: Color.fromARGB(29, 255, 255, 255),
-                          ),
                           labelText: 'Senha',
                           labelStyle: TextStyle(
-                            color: Color.fromARGB(255, 150, 150, 150),
+                            color: Colors.white,
                           )
                         ),
                       ),
