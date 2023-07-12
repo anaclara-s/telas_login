@@ -169,8 +169,8 @@ class Tela2 extends StatelessWidget {
                           style: ElevatedButton.styleFrom(
                               shadowColor: Colors.transparent,
                               backgroundColor:
-                                  Color.fromARGB(50, 255, 255, 255)),
-                          child: Row(
+                                  const Color.fromARGB(50, 255, 255, 255)),
+                          child: const Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Icon(
@@ -181,7 +181,7 @@ class Tela2 extends StatelessWidget {
                                 ' Entrar',
                                 style: TextStyle(
                                   color:
-                                      const Color.fromARGB(255, 148, 103, 252),
+                                      Color.fromARGB(255, 148, 103, 252),
                                 ),
                               ),
                             ],

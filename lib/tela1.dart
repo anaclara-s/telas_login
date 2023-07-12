@@ -20,7 +20,7 @@ class Pagina1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 251, 212, 132),
+      backgroundColor: const Color.fromARGB(255, 251, 212, 132),
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         titleTextStyle: 
@@ -98,7 +98,7 @@ class Pagina1 extends StatelessWidget {
                   child: Column(
                     children: [
                       TextFormField(
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Color.fromARGB(255, 90, 62, 6),
                         ),
                         decoration: const InputDecoration(
@@ -130,7 +130,7 @@ class Pagina1 extends StatelessWidget {
                         ),
 
                       TextFormField(
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Color.fromARGB(255, 90, 62, 6),
                         ),
                         obscureText: true,
