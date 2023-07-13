@@ -103,7 +103,7 @@ class Tela2 extends StatelessWidget {
                 //
 
                 const Padding(
-                  padding: EdgeInsets.only(top: 10),
+                  padding: EdgeInsets.only(top: 20),
                 ),
                 TextFormField(
                   obscureText: true,
@@ -137,7 +137,6 @@ class Tela2 extends StatelessWidget {
                 //
 
                 Container(
-                  padding: const EdgeInsets.only(top: 5),
                   alignment: Alignment.bottomCenter,
                   child: Column(
                     children: [
@@ -153,7 +152,7 @@ class Tela2 extends StatelessWidget {
                           'Esqueceu a senha',
                           style: TextStyle(
                             color: Color.fromARGB(153, 181, 185, 247),
-                            fontSize: 12,
+                            fontSize: 10,
                           ),
                         ),
                       ),
@@ -161,10 +160,11 @@ class Tela2 extends StatelessWidget {
                       //
 
                       const Padding(
-                        padding: EdgeInsets.only(top: 10),
+                        padding: EdgeInsets.only(top: 15),
                       ),
                       SizedBox(
                         width: 100,
+                        height: 35,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
                               shadowColor: Colors.transparent,
@@ -199,8 +199,8 @@ class Tela2 extends StatelessWidget {
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          shadowColor: Colors.transparent,
-                          backgroundColor: Colors.transparent,
+                          shadowColor: Color.fromARGB(255, 0, 0, 0),
+                          backgroundColor: const Color.fromARGB(255, 5, 33, 87),
                         ),
                         child: const Text(
                           'Criar conta',
