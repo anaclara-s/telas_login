@@ -2,8 +2,11 @@
 
 Projeto criado para exercitar meus conhecimentos sobre Front-end 
 
-## Getting Started
+## 
+Primeira tela
+![Tela 1](assets/imagens/tela1.PNG)
 
-![Primeita tela de login](assets/imagens/tela1.PNG)
-![Primeita tela de login](assets/imagens/tela2.PNG)
+## 
+Segunda tela
+![Tela 2](assets/imagens/tela2.PNG)
 
